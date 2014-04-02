@@ -145,7 +145,7 @@ public class MainActivity extends ActionBarActivity
 			
 			// Get user input
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
-            builder.setTitle("Select The Difficulty Level");
+            builder.setTitle(getString(R.string.action_change_font));
             builder.setSingleChoiceItems(fontNames, -1, new DialogInterface.OnClickListener() {
 	            public void onClick(DialogInterface dialog, int item) {
 	                if (item < fonts.length)
